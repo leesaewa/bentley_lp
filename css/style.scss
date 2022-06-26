@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 @import "_variable.scss";
 @import "_mixin.scss";
 @import "_extend.scss";
@@ -15,7 +17,7 @@ font-family: 'Gamja Flower', cursive;*/
 
 ::selection {
   background: $mainTxt;
-  color: #fff;
+  color: $white;
 }
 
 .row {
@@ -26,7 +28,7 @@ font-family: 'Gamja Flower', cursive;*/
 }
 a,
 a:hover {
-  color: #000;
+  color: $mainTxt;
   text-decoration: none;
   transition: $transition;
 }
@@ -42,7 +44,7 @@ a:hover {
 
   .title {
     text-align: left;
-    color: #fff;
+    color: $white;
     position: absolute;
     bottom: 15%;
 
@@ -65,10 +67,10 @@ a:hover {
 
 .btn {
   transition: $transition;
-  color: #fff;
+  color: $white;
   display: inline-block;
   border-radius: 50px;
-  border: 1px solid #fff;
+  border: 1px solid $white;
   font-size: 18px;
   font-weight: 100;
   padding: 13px 20px 15px;
@@ -87,7 +89,7 @@ a:hover {
   &:hover {
     background: $mainTxt;
     border: 1px solid $mainTxt;
-    color: #fff;
+    color: $white;
 
     i {
       transform: rotate(360deg);
@@ -109,12 +111,12 @@ a:hover {
     &:before {
       content: "";
       position: absolute;
-      bottom: -20px;
+      bottom: -15px;
       left: 50%;
       transform: $transform50;
       width: 50px;
       height: 2px;
-      background: #000;
+      background: $mainTxt;
       text-align: center;
     }
   }
@@ -153,7 +155,7 @@ header {
   padding: 1rem;
 
   &.change {
-    background: #000;
+    background: $mainTxt;
 
     #container {
       h1 {
@@ -182,7 +184,7 @@ header {
         display: block;
         width: 40px;
         height: 2px;
-        background: #fff;
+        background: $white;
         position: absolute;
         right: 0;
         transition: $transition;
@@ -236,12 +238,12 @@ header {
         top: 20px;
         width: 1px;
         height: 20px;
-        background: #fff;
+        background: $white;
       }
       &:after {
         content: "expand_more";
         font: 17px "material icons";
-        color: #fff;
+        color: $white;
         position: absolute;
         right: 11px;
         top: 20px;
@@ -261,12 +263,12 @@ header {
         background: transparent;
         line-height: 1.75;
         word-break: normal;
-        color: #fff;
+        color: $white;
         border: 1px solid rgba(255, 255, 255, 0.6);
         border-radius: 6px;
       }
       option {
-        color: #000;
+        color: $mainTxt;
       }
     }
 
@@ -287,18 +289,18 @@ header {
         @include flexbox();
 
         a {
-          color: #fff;
+          color: $white;
           text-transform: uppercase;
           padding: 20px 0 5px;
           position: relative;
           letter-spacing: 1px;
 
           &:hover {
-            color: #fff;
+            color: $white;
             &::before {
               width: 6px;
               height: 18px;
-              background: #fff;
+              background: $white;
               position: absolute;
               bottom: 7px;
               left: -12px;
@@ -354,6 +356,8 @@ header {
     }
 
     .owl-nav {
+      margin-top: 0;
+
       [class*="owl-"] {
         background: rgba(255, 255, 255, 0.1);
         border-radius: 0;
@@ -363,7 +367,7 @@ header {
         height: 40px;
       }
       span {
-        color: #fff;
+        color: $white;
         font-size: 40px;
       }
       button.owl-prev {
@@ -385,7 +389,7 @@ header {
       display: inline-block;
       -webkit-transform: translate(0, -50%);
       transform: translate(0, -50%);
-      color: #fff;
+      color: $white;
       letter-spacing: 0.1em;
       text-decoration: none;
       transition: opacity 0.3s;
@@ -405,7 +409,7 @@ header {
           left: 50%;
           width: 1px;
           height: 50px;
-          background: #fff;
+          background: $white;
           animation: sdb05 1.5s infinite;
           box-sizing: border-box;
         }
@@ -439,7 +443,7 @@ header {
 
   .design-cont {
     background: linear-gradient(to left, $mainTxt, $mainTxt 70%, #eee 70%);
-    color: #fff;
+    color: $white;
     @include flexbox();
     padding: 100px 0;
 
@@ -452,7 +456,7 @@ header {
         margin-top: 40px;
         &:hover {
           color: $mainTxt;
-          background: #fff;
+          background: $white;
         }
       }
     }
@@ -461,21 +465,29 @@ header {
 
 /*360viewer*/
 #viewer {
-  background: #000;
+  background: $black;
   padding: 100px 0;
 
   .ttl {
-    color: #fff;
+    color: $white;
     margin: 0;
   }
   .pager {
     text-align: right;
-    color: #fff;
+    color: $white;
     padding-right: 10%;
 
     span {
       display: block;
       margin-bottom: 20px;
+    }
+  }
+
+  .product-viewer {
+    width: 100%;
+
+    img {
+      width: 100%;
     }
   }
 }
@@ -490,7 +502,7 @@ header {
     color: $white;
 
     .btn:hover {
-      background: #fff;
+      background: $white;
       color: $mainTxt;
     }
   }
@@ -552,7 +564,7 @@ header {
 
     .title {
       text-align: right;
-      color: #fff;
+      color: $white;
       position: absolute;
       right: 0;
       bottom: -850px;
@@ -602,7 +614,7 @@ header {
       top: 0;
       left: 0;
       background: rgba(22, 26, 37, 0.9);
-      color: #fff;
+      color: $white;
       width: 100%;
       height: 99%;
       text-align: center;
@@ -614,7 +626,7 @@ header {
         position: absolute;
         top: 10px;
         left: 10px;
-        border: 1px solid #fff;
+        border: 1px solid $white;
         width: 96%;
         height: 96%;
       }
@@ -623,7 +635,7 @@ header {
         position: absolute;
         top: 20px;
         left: 20px;
-        border: 1px solid #fff;
+        border: 1px solid $white;
         width: 93%;
         height: 93%;
       }
@@ -647,7 +659,7 @@ header {
 
 /*spec*/
 #spec {
-  background: #fff;
+  background: $white;
   margin: 50px auto;
 
   img {
@@ -660,7 +672,7 @@ header {
 
     li {
       width: 50%;
-      border-left: 1px solid #000;
+      border-left: 1px solid $mainTxt;
       text-align: left;
       padding: 0 0 0 10px;
     }
@@ -683,7 +695,7 @@ header {
     overflow: hidden;
 
     .hover {
-      color: #fff;
+      color: $white;
       width: 34%;
       position: relative;
       z-index: 2;
@@ -695,7 +707,7 @@ header {
       }
       h2 {
         font-size: 30px;
-        color: #fff;
+        color: $white;
         padding: 0 0 8%;
       }
       p {
@@ -757,7 +769,7 @@ footer {
     @include flexbox($flexW: wrap);
 
     .text {
-      color: #fff;
+      color: $white;
       font-size: 14px;
       width: 33%;
       text-align: center;
@@ -777,7 +789,7 @@ footer {
           padding-left: 20px;
 
           a {
-            color: #fff;
+            color: $white;
             font-size: 30px;
           }
         }
@@ -787,10 +799,35 @@ footer {
 }
 
 /*---------------------
-        responsive
+        scroll top
 ---------------------*/
-@media screen and (max-width: 1199px) {
-}
 
-@media screen and (max-width: 768px) {
+#topScroll {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: $white;
+  border: 1px solid $mainTxt;
+  color: $mainTxt;
+  border-radius: 100%;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  width: 50px;
+  height: 50px;
+  @include flexbox($flexJC: center);
+  z-index: 999;
+
+  span {
+    position: relative;
+    top: 0;
+    transition: $transition;
+  }
+
+  &:hover {
+    background-color: $mainTxt;
+    color: $white;
+    span {
+      top: -6px;
+    }
+  }
 }

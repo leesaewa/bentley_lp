@@ -1,0 +1,232 @@
+@media screen and (max-width: 1024px) {
+  img {
+    width: 100%;
+  }
+  header #container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .parallax-container .title {
+    padding: 2rem;
+  }
+  #design .design-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #161a25;
+  }
+  #design .design-cont .title {
+    text-align: center;
+    padding: 2rem;
+  }
+  #viewer {
+    padding: 100px 0 50px;
+  }
+  #viewer .pager {
+    text-align: center;
+    padding: 2rem;
+  }
+  .basic-slwrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .basic-slwrap .basic-sl {
+    width: 100%;
+  }
+  .basic-slwrap .title {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 2rem 3.5rem 2rem;
+  }
+  #performance #perfor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #performance #perfor .title {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 2rem 3.5rem 2rem;
+  }
+  #performance #feature ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #performance #feature ul .title {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 2rem 3.5rem 2rem;
+  }
+  .tech-right .row .title {
+    bottom: -47rem;
+    text-shadow: 0px 0px 10px #000;
+  }
+  .tech-hover {
+    margin-top: 0;
+  }
+  .tech-hover figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    background: #161a25;
+    margin-bottom: 1px;
+  }
+  .tech-hover figure:nth-child(2n + 2) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .tech-hover figure:nth-child(2n + 2) img {
+    border-right: 0;
+    border-left: 1px solid #ffffff;
+  }
+  .tech-hover figure:last-child {
+    width: 100%;
+    background: url(../img/tech05.jpg) top center no-repeat;
+    background-size: cover;
+  }
+  .tech-hover figure:last-child figcaption {
+    padding: 2rem;
+    border-left: 1px solid #ffffff;
+  }
+  .tech-hover figure:last-child img {
+    opacity: 0;
+  }
+  .tech-hover figure img {
+    border-right: 1px solid #ffffff;
+    width: 50%;
+  }
+  .tech-hover figure figcaption {
+    background: #161a25;
+    position: inherit;
+    opacity: 1;
+  }
+  .tech-hover figure figcaption .box {
+    -webkit-transform: none;
+            transform: none;
+    left: 0;
+    top: 0;
+  }
+  .tech-hover figure figcaption:before {
+    display: none;
+  }
+  .tech-hover figure figcaption:after {
+    display: none;
+  }
+  #personal .effbox:before {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    width: 100%;
+    left: 0;
+  }
+  #personal .effbox:after {
+    opacity: 1;
+  }
+  #personal .effbox .hover {
+    width: 100%;
+    padding-right: 10%;
+    opacity: 1;
+  }
+  #personal .effbox.box2 {
+    border-top: 1px solid #ffffff;
+  }
+  #personal .effbox.box2::before {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    width: 100%;
+    right: 0;
+  }
+  #personal .effbox.box2 .hover {
+    width: 100%;
+  }
+  #spec ul {
+    padding: 2rem;
+  }
+  footer {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title br {
+    display: none;
+  }
+  .tech-hover figure:last-child img {
+    display: none;
+  }
+  .tech-hover figure:last-child figcaption {
+    width: 100%;
+    padding: 5rem 2rem;
+    background: rgba(22, 26, 37, 0.8);
+    border: 0;
+  }
+  #personal .effbox {
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  #personal .effbox .hover {
+    padding-right: 0;
+  }
+  #personal .effbox .hover p br {
+    display: none;
+  }
+  #personal .effbox.box2 .hover {
+    padding-right: 0;
+    text-align: center;
+  }
+}

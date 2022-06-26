@@ -1,6 +1,42 @@
-@mixin flexbox($flexW: no-wrap, $flexJC: space-between, $flexAI: center) {
+@charset "utf-8";
+
+@mixin flexbox($flexW: nowrap, $flexJC: space-between, $flexAI: center) {
   display: flex;
   flex-wrap: $flexW;
   justify-content: $flexJC;
   align-items: $flexAI;
+}
+
+//only mobile
+@mixin slideTxt {
+  width: 100%;
+  text-align: center;
+  padding: $mobilePadding $mobilePadding 3.5rem $mobilePadding;
+}
+@mixin effbox {
+  opacity: 1;
+  transform: rotate(0deg);
+  width: 100%;
+}
+
+// responsive
+@mixin mobile {
+  @media screen and (max-width: #{$maxIphone}) {
+    @content;
+  }
+}
+@mixin smallTablet {
+  @media screen and (max-width: #{$minTablet}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: #{$maxTablet}) {
+    @content;
+  }
+}
+@mixin noteBook {
+  @media screen and (max-width: #{$maxNote}) {
+    @content;
+  }
 }

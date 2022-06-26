@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+@import "_variable.scss";
+@import "_mixin.scss";
+@import "_extend.scss";
+
+// 1440px
+@include noteBook {
+}
+
+// 1024px
+@include tablet {
+  img {
+    width: 100%;
+  }
+  header {
+    #container {
+      nav {
+        ul {
+          @include flexbox($flexW: wrap);
+
+          li {
+          }
+        }
+      }
+    }
+  }
+
+  .parallax-container {
+    .title {
+      padding: $mobilePadding;
+    }
+  }
+
+  #design {
+    .design-cont {
+      @include flexbox($flexW: wrap);
+      background: $mainTxt;
+
+      .title {
+        text-align: center;
+        padding: $mobilePadding;
+      }
+    }
+  }
+
+  #viewer {
+    padding: 100px 0 50px;
+
+    .pager {
+      text-align: center;
+      padding: $mobilePadding;
+    }
+  }
+
+  // slider section
+  .basic-slwrap {
+    @include flexbox($flexW: wrap);
+
+    .basic-sl {
+      width: 100%;
+    }
+
+    .title {
+      @include slideTxt;
+    }
+  }
+
+  #performance {
+    #perfor {
+      @include flexbox($flexW: wrap-reverse);
+
+      .title {
+        @include slideTxt;
+      }
+    }
+
+    #feature {
+      ul {
+        @include flexbox($flexW: wrap);
+
+        .title {
+          @include slideTxt;
+        }
+      }
+    }
+  }
+
+  .tech-right {
+    .row {
+      .title {
+        bottom: -47rem;
+        text-shadow: 0px 0px 10px $black;
+      }
+    }
+  }
+
+  .tech-hover {
+    margin-top: 0;
+
+    figure {
+      @include flexbox();
+      width: 100%;
+      background: $mainTxt;
+      margin-bottom: 1px;
+
+      &:nth-child(2n + 2) {
+        flex-direction: row-reverse;
+
+        img {
+          border-right: 0;
+          border-left: 1px solid $white;
+        }
+      }
+      &:last-child {
+        width: 100%;
+        background: url(../img/tech05.jpg) top center no-repeat;
+        background-size: cover;
+
+        figcaption {
+          padding: $mobilePadding;
+          border-left: 1px solid $white;
+        }
+        img {
+          opacity: 0;
+        }
+      }
+
+      img {
+        border-right: 1px solid $white;
+        width: 50%;
+      }
+
+      figcaption {
+        background: $mainTxt;
+        position: inherit;
+        opacity: 1;
+
+        .box {
+          transform: none;
+          left: 0;
+          top: 0;
+        }
+
+        &:before {
+          display: none;
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #personal {
+    .effbox {
+      &:before {
+        @include effbox;
+        left: 0;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+
+      .hover {
+        width: 100%;
+        padding-right: 10%;
+        opacity: 1;
+      }
+
+      &.box2 {
+        border-top: 1px solid $white;
+
+        &::before {
+          @include effbox;
+          right: 0;
+        }
+        .hover {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #spec {
+    ul {
+      padding: $mobilePadding;
+    }
+  }
+
+  footer {
+    padding: $mobilePadding;
+  }
+
+  //
+}
+
+// 768px
+@include smallTablet {
+  .title {
+    br {
+      display: none;
+    }
+  }
+
+  .tech-hover {
+    figure {
+      &:last-child {
+        img {
+          display: none;
+        }
+        figcaption {
+          width: 100%;
+          padding: 5rem $mobilePadding;
+          background: rgba(22, 26, 37, 0.8);
+          border: 0;
+        }
+      }
+    }
+  }
+
+  #personal {
+    .effbox {
+      text-align: center;
+      padding: 5rem $mobilePadding;
+
+      .hover {
+        padding-right: 0;
+
+        p {
+          br {
+            display: none;
+          }
+        }
+      }
+
+      &.box2 {
+        .hover {
+          padding-right: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// 767px
+@include mobile {
+}

@@ -19,11 +19,11 @@ font-family: 'Gamja Flower', cursive;*/
 ---------------------*/
 ::-moz-selection {
   background: #161a25;
-  color: #fff;
+  color: #ffffff;
 }
 ::selection {
   background: #161a25;
-  color: #fff;
+  color: #ffffff;
 }
 
 .row {
@@ -35,7 +35,7 @@ font-family: 'Gamja Flower', cursive;*/
 
 a,
 a:hover {
-  color: #000;
+  color: #161a25;
   text-decoration: none;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -52,7 +52,7 @@ a:hover {
 
 .parallax-container .title {
   text-align: left;
-  color: #fff;
+  color: #ffffff;
   position: absolute;
   bottom: 15%;
 }
@@ -67,10 +67,10 @@ a:hover {
 .btn {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   border-radius: 50px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   font-size: 18px;
   font-weight: 100;
   padding: 13px 20px 15px;
@@ -95,7 +95,7 @@ a:hover {
 .btn:hover {
   background: #161a25;
   border: 1px solid #161a25;
-  color: #fff;
+  color: #ffffff;
 }
 
 .btn:hover i {
@@ -116,13 +116,13 @@ a:hover {
 .ttl h2:before {
   content: "";
   position: absolute;
-  bottom: -20px;
+  bottom: -15px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 50px;
   height: 2px;
-  background: #000;
+  background: #161a25;
   text-align: center;
 }
 
@@ -162,7 +162,7 @@ header {
 }
 
 header.change {
-  background: #000;
+  background: #161a25;
 }
 
 header.change #container h1 img {
@@ -201,7 +201,7 @@ header #container .hamburger span {
   display: block;
   width: 40px;
   height: 2px;
-  background: #fff;
+  background: #ffffff;
   position: absolute;
   right: 0;
   -webkit-transition: all 0.5s ease;
@@ -257,13 +257,13 @@ header #container .select-box::before {
   top: 20px;
   width: 1px;
   height: 20px;
-  background: #fff;
+  background: #ffffff;
 }
 
 header #container .select-box:after {
   content: "expand_more";
   font: 17px "material icons";
-  color: #fff;
+  color: #ffffff;
   position: absolute;
   right: 11px;
   top: 20px;
@@ -286,13 +286,13 @@ header #container .select-box select {
   background: transparent;
   line-height: 1.75;
   word-break: normal;
-  color: #fff;
+  color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 6px;
 }
 
 header #container .select-box option {
-  color: #000;
+  color: #161a25;
 }
 
 header #container nav {
@@ -316,8 +316,8 @@ header #container nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -327,7 +327,7 @@ header #container nav ul {
 }
 
 header #container nav ul a {
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   padding: 20px 0 5px;
   position: relative;
@@ -335,13 +335,13 @@ header #container nav ul a {
 }
 
 header #container nav ul a:hover {
-  color: #fff;
+  color: #ffffff;
 }
 
 header #container nav ul a:hover::before {
   width: 6px;
   height: 18px;
-  background: #fff;
+  background: #ffffff;
   position: absolute;
   bottom: 7px;
   left: -12px;
@@ -395,6 +395,10 @@ header #container nav ul a::before {
           transform: translate(-50%, -50%);
 }
 
+#visual .visual-sl .owl-nav {
+  margin-top: 0;
+}
+
 #visual .visual-sl .owl-nav [class*="owl-"] {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 0;
@@ -405,7 +409,7 @@ header #container nav ul a::before {
 }
 
 #visual .visual-sl .owl-nav span {
-  color: #fff;
+  color: #ffffff;
   font-size: 40px;
 }
 
@@ -425,7 +429,7 @@ header #container nav ul a::before {
   display: inline-block;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  color: #fff;
+  color: #ffffff;
   letter-spacing: 0.1em;
   text-decoration: none;
   -webkit-transition: opacity 0.3s;
@@ -446,7 +450,7 @@ header #container nav ul a::before {
   left: 50%;
   width: 1px;
   height: 50px;
-  background: #fff;
+  background: #ffffff;
   -webkit-animation: sdb05 1.5s infinite;
           animation: sdb05 1.5s infinite;
   -webkit-box-sizing: border-box;
@@ -498,12 +502,12 @@ header #container nav ul a::before {
 #design .design-cont {
   background: -webkit-gradient(linear, right top, left top, from(#161a25), color-stop(70%, #161a25), color-stop(70%, #eee));
   background: linear-gradient(to left, #161a25, #161a25 70%, #eee 70%);
-  color: #fff;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -523,7 +527,7 @@ header #container nav ul a::before {
 
 #design .design-cont .title a:hover {
   color: #161a25;
-  background: #fff;
+  background: #ffffff;
 }
 
 /*360viewer*/
@@ -533,13 +537,13 @@ header #container nav ul a::before {
 }
 
 #viewer .ttl {
-  color: #fff;
+  color: #ffffff;
   margin: 0;
 }
 
 #viewer .pager {
   text-align: right;
-  color: #fff;
+  color: #ffffff;
   padding-right: 10%;
 }
 
@@ -548,12 +552,20 @@ header #container nav ul a::before {
   margin-bottom: 20px;
 }
 
+#viewer .product-viewer {
+  width: 100%;
+}
+
+#viewer .product-viewer img {
+  width: 100%;
+}
+
 .basic-slwrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -570,7 +582,7 @@ header #container nav ul a::before {
 }
 
 .basic-slwrap .title .btn:hover {
-  background: #fff;
+  background: #ffffff;
   color: #161a25;
 }
 
@@ -614,8 +626,8 @@ header #container nav ul a::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -640,7 +652,7 @@ header #container nav ul a::before {
 
 .tech-right .row .title {
   text-align: right;
-  color: #fff;
+  color: #ffffff;
   position: absolute;
   right: 0;
   bottom: -850px;
@@ -693,7 +705,7 @@ header #container nav ul a::before {
   top: 0;
   left: 0;
   background: rgba(22, 26, 37, 0.9);
-  color: #fff;
+  color: #ffffff;
   width: 100%;
   height: 99%;
   text-align: center;
@@ -707,7 +719,7 @@ header #container nav ul a::before {
   position: absolute;
   top: 10px;
   left: 10px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   width: 96%;
   height: 96%;
 }
@@ -717,7 +729,7 @@ header #container nav ul a::before {
   position: absolute;
   top: 20px;
   left: 20px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   width: 93%;
   height: 93%;
 }
@@ -742,7 +754,7 @@ header #container nav ul a::before {
 
 /*spec*/
 #spec {
-  background: #fff;
+  background: #ffffff;
   margin: 50px auto;
 }
 
@@ -768,7 +780,7 @@ header #container nav ul a::before {
 
 #spec ul li {
   width: 50%;
-  border-left: 1px solid #000;
+  border-left: 1px solid #161a25;
   text-align: left;
   padding: 0 0 0 10px;
 }
@@ -789,7 +801,7 @@ header #container nav ul a::before {
 }
 
 #personal .effbox .hover {
-  color: #fff;
+  color: #ffffff;
   width: 34%;
   position: relative;
   z-index: 2;
@@ -804,7 +816,7 @@ header #container nav ul a::before {
 
 #personal .effbox .hover h2 {
   font-size: 30px;
-  color: #fff;
+  color: #ffffff;
   padding: 0 0 8%;
 }
 
@@ -881,7 +893,7 @@ footer .row {
 }
 
 footer .row .text {
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   width: 33%;
   text-align: center;
@@ -914,10 +926,51 @@ footer .row .text ul li {
 }
 
 footer .row .text ul li a {
-  color: #fff;
+  color: #ffffff;
   font-size: 30px;
 }
 
 /*---------------------
-        responsive
+        scroll top
 ---------------------*/
+#topScroll {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: #ffffff;
+  border: 1px solid #161a25;
+  color: #161a25;
+  border-radius: 100%;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+}
+
+#topScroll span {
+  position: relative;
+  top: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#topScroll:hover {
+  background-color: #161a25;
+  color: #ffffff;
+}
+
+#topScroll:hover span {
+  top: -6px;
+}
