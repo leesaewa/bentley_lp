@@ -30,9 +30,9 @@
 
   
 ## 수정하고 싶은 부분, 목표
-- header
+- ~~header~~
 - 호버 효과
 - 스크롤 애니메이션 효과
 - SPECIFICATIONS 부분을 좀 더 디자인할 것
-- 반응형
+- ~~반응형~~
 gh repo clone leesaewa/bentley_lp
