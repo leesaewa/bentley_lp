@@ -20,6 +20,11 @@
 }
 
 // responsive
+@mixin tinyMobile {
+  @media screen and (max-width: #{$minIphone}) {
+    @content;
+  }
+}
 @mixin mobile {
   @media screen and (max-width: #{$maxIphone}) {
     @content;

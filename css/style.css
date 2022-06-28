@@ -518,7 +518,12 @@ header #container nav ul a::before {
 }
 
 #design .design-cont img {
+  width: 70%;
   max-width: 100%;
+}
+
+#design .design-cont .title {
+  width: 30%;
 }
 
 #design .design-cont .title a {

@@ -1,38 +1,39 @@
+@media screen and (max-width: 1440px) {
+  .parallax-container .title {
+    padding: 2rem;
+  }
+  #design .design-cont img {
+    width: 56%;
+  }
+  #design .design-cont .title {
+    width: 44%;
+  }
+  .tech-right .row .title {
+    bottom: -47rem;
+  }
+  footer {
+    padding: 2rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   img {
     width: 100%;
   }
   header #container nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .parallax-container .title {
-    padding: 2rem;
   }
   #design .design-cont {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     background: #161a25;
   }
+  #design .design-cont img {
+    width: 100%;
+  }
   #design .design-cont .title {
+    width: 100%;
     text-align: center;
     padding: 2rem;
   }
@@ -44,20 +45,15 @@
     padding: 2rem;
   }
   .basic-slwrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .basic-slwrap .basic-sl {
     width: 100%;
+  }
+  .basic-slwrap .basic-sl .owl-dots {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   .basic-slwrap .title {
     width: 100%;
@@ -83,26 +79,23 @@
     padding: 2rem 2rem 3.5rem 2rem;
   }
   #performance #feature ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   #performance #feature ul .title {
     width: 100%;
     text-align: center;
     padding: 2rem 2rem 3.5rem 2rem;
   }
-  .tech-right .row .title {
-    bottom: -47rem;
-    text-shadow: 0px 0px 10px #000;
+  .tech-right {
+    position: relative;
+  }
+  .tech-right::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
   }
   .tech-hover {
     margin-top: 0;
@@ -197,9 +190,6 @@
   #spec ul {
     padding: 2rem;
   }
-  footer {
-    padding: 2rem;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -228,5 +218,158 @@
   #personal .effbox.box2 .hover {
     padding-right: 0;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .parallax-container .title {
+    text-align: center;
+  }
+  .btn {
+    padding: 10px 20px 10px 16px;
+    font-size: 16px;
+  }
+  .ttl {
+    padding: 2rem;
+  }
+  .ttl h2 {
+    font-size: 2.4em;
+  }
+  header #container h1,
+  header #container h1 img {
+    width: 50%;
+  }
+  header #container .select-box {
+    min-width: 70px;
+  }
+  header #container .select-box select {
+    height: 40px;
+    font-size: 14px;
+  }
+  header #container .select-box:before {
+    top: 15px;
+    right: 30px;
+  }
+  header #container .select-box:after {
+    top: 16px;
+    right: 8px;
+  }
+  header #container nav {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  header #container nav.open {
+    height: 100%;
+  }
+  header #container nav ul {
+    margin-top: 18px;
+  }
+  header #container nav ul li {
+    width: 100%;
+  }
+  header #container nav ul li a {
+    padding: 6px 0 5px;
+    font-size: 14px;
+  }
+  header #container nav ul li a:hover:before {
+    left: 0;
+  }
+  header.change #container h1 img {
+    width: 50%;
+  }
+  #visual .visual-sl .item h2 {
+    padding: 2rem;
+    font-size: 4em;
+    padding-top: 30%;
+  }
+  #visual .visual-sl .item .textbox {
+    width: 100%;
+    padding: 2rem;
+  }
+  #visual .visual-sl .item .textbox p {
+    font-size: 20px;
+  }
+  #visual .visual-sl .owl-nav button.owl-prev {
+    right: 4.7rem;
+  }
+  #visual .visual-sl .owl-nav button.owl-next {
+    right: 2rem;
+  }
+  #visual .scrolldw#scrolldown a {
+    left: 2rem;
+  }
+  .tech-right .row .title {
+    text-align: center;
+  }
+  .tech-hover figure {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tech-hover figure:nth-child(2n + 2) img {
+    border: 0;
+  }
+  .tech-hover figure img {
+    width: 100%;
+    border: 0;
+  }
+  .tech-hover figure figcaption {
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+  .tech-hover figure figcaption .box h2 {
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 2rem;
+  }
+  .tech-hover figure figcaption .box p {
+    padding: 0;
+  }
+  #spec ul li {
+    width: 100%;
+  }
+  footer .row .text {
+    width: 100%;
+  }
+  footer .row .text:first-child {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  footer .row .text:nth-child(2) {
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  footer .row .text ul {
+    padding-top: 0.6rem;
+  }
+  footer .row .text ul li {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .btn {
+    font-size: 14px;
+  }
+  .ttl h2 {
+    font-size: 2em;
+  }
+  .title h2 {
+    font-size: 1.6em;
+  }
+  .parallax-container {
+    height: 120%;
+  }
+  .parallax-container .title {
+    bottom: 0;
+  }
+  #visual .visual-sl .item h2 {
+    font-size: 2.4em;
+    padding-top: 30%;
+  }
+  .tech-right .row .title {
+    top: 0;
+    bottom: 0;
+  }
+  .tech-hover figure figcaption .box .tt {
+    font-size: 1.6em;
   }
 }

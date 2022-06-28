@@ -448,10 +448,13 @@ header {
     padding: 100px 0;
 
     img {
+      width: 70%;
       max-width: 100%;
     }
 
     .title {
+      width: 30%;
+
       a {
         margin-top: 40px;
         &:hover {
