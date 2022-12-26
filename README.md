@@ -1,10 +1,16 @@
 # bentley LP
 
-2020년도에 코딩 실력이 부족한 것 같아서 혼자서 테마를 정해 디자인과 퍼블리싱을 하였다
+2020년도에 개인 프로젝트로 만든 벤틀리 프로모션 페이지의 2022년 리뉴얼 버전입니다.
+2020年に個人プロジェクトで作ったベントレープロモーションページの2022年リニューアルバージョンです。
+
 
 - <a href="https://leesaewa.github.io/bentley_lp_2020/">리뉴얼 전 사이트 보러가기</a>
 
 - <a href="https://leesaewa.github.io/bentley_lp/">리뉴얼 후 사이트 보러가기</a>
+
+## Preview
+
+<img src="https://user-images.githubusercontent.com/97646713/209562438-fd4a6aa0-df44-4af7-bc70-74fd583e416a.JPG">
 
 ## 2022년 버전으로 교체중\_\_\_LOG
 
